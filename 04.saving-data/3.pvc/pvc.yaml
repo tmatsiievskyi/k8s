@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: fileshare
+spec:
+  storageClassName: localstorage
+  accessModes:
+    - ReadWriteMany # access type
+  resources:
+    requests:
+      storage: 10Mi # request for 10mb storage
